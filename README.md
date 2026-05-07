@@ -10,3 +10,15 @@ Githaka JM, Lerner EP
 <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
 
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
+
+Dependencies
+Name
+MATLAB
+Image Processing Toolbox
+Statistics and Machine Learning Toolbox
+Parallel Computing Toolbox
+Bioinformatics Toolbox
+biChordChart (included) https://github.com/slandarer/MATLAB-chord-diagram
+Optional
+EnrichrAPI modified from scGEAToolbox (included) https://github.com/jamesjcai/scGEAToolbox
+Matrix Market file reader/writer (included) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html
