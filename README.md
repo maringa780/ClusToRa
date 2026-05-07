@@ -1,9 +1,13 @@
-<img width="6438" height="2169" alt="githubmain" src="https://github.com/user-attachments/assets/2f8e09b6-779b-4d39-b03a-e8c3dca362e4" />
+<img width="6438" height="2169" alt="githubmain" src="https://github.com/user-attachments/assets/2f8e09b6-779b-4d39-b03a-e8c3dca362e4" /> 
 
+# ClusToRa
+`ClusToRa` (Cluster-to-Randomization) is a spatial omics framework that distinguishes organized cellular niches from stochastic proximity by using high-density territory identification and a fixed-position null model. It accurately quantifies cell-type recruitment while suppressing density-driven false positives common in conventional analysis methods.
+### citation
+Githaka JM, Lerner EP (2026). ClusToRa: A niche-centric framework for identifying structural recruitment and infiltration in spatial omics
+## Installation Guide \
+`ClusToRa` can be installed either as a standalone application (pre-compiled standalone if you do not have access to MATLAB license) or 
+### Windows Standalone Application \
 
-#ClusToRa
-##citation
-Githaka JM, Lerner EP
 <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" />
 
 
