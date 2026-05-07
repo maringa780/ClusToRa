@@ -14,22 +14,14 @@ Githaka JM, Lerner EP
 # Dependencies
 
 ## MATLAB
-_Image Processing Toolbox_
-
-_Statistics and Machine Learning Toolbox_
-
-_Parallel Computing Toolbox_
-
-_Bioinformatics Toolbox_
-
-_biChordChart_ (**included**) https://github.com/slandarer/MATLAB-chord-diagram
-
-_Maximally perceptually-distinct colors Generator_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors 
+_Image Processing Toolbox_ \
+_Statistics and Machine Learning Toolbox_ \
+_Parallel Computing Toolbox_ \
+_Bioinformatics Toolbox_ \
+_biChordChart_ (**included**) https://github.com/slandarer/MATLAB-chord-diagram \
+_Maximally perceptually-distinct colors Generator_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors  \
 
 ## Optional
-
-_EnrichrAPI modified from scGEAToolbox_ (**included**) https://github.com/jamesjcai/scGEAToolbox
-
-_Matrix Market file reader/writer_ (**included**) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html
-
-_Colorspace Transformations_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations
+_EnrichrAPI modified from scGEAToolbox_ (**included**) https://github.com/jamesjcai/scGEAToolbox \
+_Matrix Market file reader/writer_ (**included**) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
+_Colorspace Transformations_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
