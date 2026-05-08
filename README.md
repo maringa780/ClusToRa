@@ -38,24 +38,26 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 ## • ClusToRa Plotting
 <details>
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
-   db
+   dbefededf
    </details>
+   
 ## • ClusToRa Differential
 <details>
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
+   fhfb
 </details>
 
 # Dependencies
 
 ## MATLAB
-_Image Processing Toolbox_ \
-_Statistics and Machine Learning Toolbox_ \
-_Parallel Computing Toolbox_ \
-_Bioinformatics Toolbox_ \
-_biChordChart_ (**included**) https://github.com/slandarer/MATLAB-chord-diagram \
-_Maximally perceptually-distinct colors Generator_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors  \
+•_Image Processing Toolbox_ \
+•_Statistics and Machine Learning Toolbox_ \
+•_Parallel Computing Toolbox_ \
+•_Bioinformatics Toolbox_ \
+•_biChordChart_ (**included**) https://github.com/slandarer/MATLAB-chord-diagram \
+•_Maximally perceptually-distinct colors Generator_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors  \
 
 ## Optional
-_EnrichrAPI modified from scGEAToolbox_ (**included**) https://github.com/jamesjcai/scGEAToolbox \
-_Matrix Market file reader/writer_ (**included**) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
-_Colorspace Transformations_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
+•_EnrichrAPI modified from scGEAToolbox_ (**included**) https://github.com/jamesjcai/scGEAToolbox \
+•_Matrix Market file reader/writer_ (**included**) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
+•_Colorspace Transformations_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
