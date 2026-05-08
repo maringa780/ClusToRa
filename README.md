@@ -10,7 +10,7 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 #### Option 2: `ClusToRa` toolbox 
 Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
 #### Option 3: `ClusToRa` manual download 
-Downloaf this repository and add all it's contents/sub-folders to your MATLAB path. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
+Download this repository and add all it's contents/sub-folders to your MATLAB path. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
 
 ## Running ClusToRa
 `ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. 
