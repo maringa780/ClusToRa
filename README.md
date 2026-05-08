@@ -19,7 +19,7 @@ Downloaf this repository and add all it's contents/sub-folders to your MATLAB pa
 
 ⚠️ **Warning:** _ClusToRa analysis_ must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
 
-Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use ClusToRa. 
+Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`. 
 
 ### • ClusToRa Analysis
 <details>
