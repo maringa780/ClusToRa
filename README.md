@@ -13,7 +13,12 @@ Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_G
 Downloaf this repository and add all it's contents/sub-folders to your MATLAB path. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
 
 ## Running ClusToRa
-`ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix.
+`ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. \
+:: To start using ClusToRa on Windows, click teh shortcut icon you created during installation: \
+:: To start using ClusToRa in MATLAB, enter:
+     ```matlab
+     ClusToRa_GUI
+     ```
 
 💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
 
@@ -22,7 +27,7 @@ Downloaf this repository and add all it's contents/sub-folders to your MATLAB pa
 Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`. 
 
 ### • ClusToRa Analysis
-_ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later). _See details_
+_ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis. _See details_
 <details>
    <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" />
    <br>
