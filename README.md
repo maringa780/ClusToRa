@@ -25,7 +25,7 @@ ClusToRa_GUI
 
 ⚠️ **Warning:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
 
-Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`. 
+Below, we use the dataset from Tzouanas et al. (download and extract the compressed `TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
 _ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis. _See details_
