@@ -12,6 +12,8 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 #### Option 3: `ClusToRa` manual download 
 `ClusToRa` can be installed either as a standalone application (pre-compiled standalone if you do not have access to MATLAB license) or 
 
+## Running ClusToRa
+
 ### • ClusToRa Analysis
 <details>
    <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" />
@@ -35,13 +37,13 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
    - This will open the graphical user interface for single-cell transcriptomic data analysis.
 </details>
 
-## • ClusToRa Plotting
+### • ClusToRa Plotting
 <details>
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
    dbefededf
    </details>
    
-## • ClusToRa Differential
+### • ClusToRa Differential
 <details>
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
    fhfb
@@ -54,10 +56,10 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 •_Statistics and Machine Learning Toolbox_ \
 •_Parallel Computing Toolbox_ \
 •_Bioinformatics Toolbox_ \
-•_biChordChart_ (**included**) https://github.com/slandarer/MATLAB-chord-diagram \
-•_Maximally perceptually-distinct colors Generator_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors  \
+•_biChordChart(**included**)_ https://github.com/slandarer/MATLAB-chord-diagram \
+•_Maximally perceptually-distinct colors Generator(**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors  \
 
 ## Optional
-•_EnrichrAPI modified from scGEAToolbox_ (**included**) https://github.com/jamesjcai/scGEAToolbox \
-•_Matrix Market file reader/writer_ (**included**) https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
-•_Colorspace Transformations_ (**included**) https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
+•_EnrichrAPI modified from scGEAToolbox(**included**)_ https://github.com/jamesjcai/scGEAToolbox \
+•_Matrix Market file reader/writer(**included**)_ https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
+•_Colorspace Transformations(**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
