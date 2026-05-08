@@ -13,12 +13,13 @@ Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_G
 Downloaf this repository and add all it's contents/sub-folders to your MATLAB path. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
 
 ## Running ClusToRa
-`ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. \
-:: To start using ClusToRa on Windows, click teh shortcut icon you created during installation: \
-:: To start using ClusToRa in MATLAB, enter:
-     ```matlab
-     ClusToRa_GUI
-     ```
+`ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. 
+#### Launching ClusToRa
+- **Windows:** To start using ClusToRa on Windows, click the shortcut icon created during installation.
+- **MATLAB:** To start using ClusToRa in MATLAB, enter:
+```matlab
+ClusToRa_GUI
+```
 
 💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
 
