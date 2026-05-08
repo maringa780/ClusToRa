@@ -17,7 +17,7 @@ Downloaf this repository and add all it's contents/sub-folders to your MATLAB pa
 
 💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
 
-⚠️ **Warning:** _ClusToRa analysis_ must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
+⚠️ **Warning:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
 
 Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`. 
 
