@@ -12,6 +12,32 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 #### Option 3: `ClusToRa` manual download 
 `ClusToRa` can be installed either as a standalone application (pre-compiled standalone if you do not have access to MATLAB license) or 
 
+## • ClusToRa Analysis
+<details>
+<br>
+1. **Open the Add-On Explorer**
+   - In MATLAB, go to the **Home** tab.  
+   - Click on the **Add-Ons** icon to open the Add-On Explorer.
+
+2. **Search for scGEAToolbox**
+   - In the search bar, type **"scGEAToolbox"** and press Enter.
+
+3. **Select and Install**
+   - Find **"scGEAToolbox (single-cell Gene Expression Analysis Toolbox)"** in the results.  
+   - Click the **Add** button to install the toolbox.
+
+5. **Launch scGEAToolbox**  
+   - To start using scGEAToolbox, enter:
+     ```matlab
+     scgeatool
+     ```
+   - This will open the graphical user interface for single-cell transcriptomic data analysis.
+</details>
+
+## • ClusToRa Analysis
+hhjkbkjb
+## • ClusToRa Analysis
+hhjkbkjb
 <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" />
 
 
