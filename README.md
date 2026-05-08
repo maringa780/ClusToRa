@@ -22,8 +22,8 @@ Downloaf this repository and add all it's contents/sub-folders to your MATLAB pa
 Below, we use data from Tzouanas et al. (2026) (download compressed file in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`. 
 
 ### • ClusToRa Analysis
+_ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later). _See details_
 <details>
-   In the app, ClusToRa Analysis tab allows you load your coordinates, cell types, and additional data (such as samples groups , sample ids, barcodes / cellIDs if you will be loading differentaial matrix later).
    <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" />
    <br>
 1. **Open the Add-On Explorer**
