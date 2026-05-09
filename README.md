@@ -9,8 +9,13 @@ Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identi
 `ClusToRa` can be installed either as a standalone application (pre-compiled standalone if you do not have access to MATLAB license).
 #### Option 2: `ClusToRa` toolbox 
 Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
-#### Option 3: `ClusToRa` manual download 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=maringa780/ClusToRa)
+#### Option 3: `ClusToRa` toolbox 
+Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
+#### Option 4: `ClusToRa` manual download 
 Download this repository and add all it's contents/sub-folders to your MATLAB path.
+#### Option 6: Mac Standalone Application
+Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
 
 ## Running ClusToRa
 `ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. 
