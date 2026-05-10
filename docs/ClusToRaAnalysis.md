@@ -24,5 +24,6 @@ Cell data can begin on row 2 or 3; the app will automatically detect the startin
 3. **Setting parameters and starting analysis**
    - Find **"iughbujk"** in the results.  
    - Click the **Add** button to install the toolbox.
-</details>
+⚠️ **Critical:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
+
 
