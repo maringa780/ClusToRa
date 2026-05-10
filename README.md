@@ -23,6 +23,7 @@ ClusToRa_startup
 💡**Tip:** If you don’t have a MATLAB license, you can sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html) (Basic), which currently includes 20 free hours per month.
 ###### Option 1.2 Desktop MATLAB
 Open your locally installed MATLAB application and run the same code shown above.
+> For local MATLAB, ensure you have the MATLAB toolboxes listed in the dependencies below.
 
 #### Option 2: Install `ClusToRa` as a Standalone Application on Windows/macOS  
 > Download `WindowsClusToRa.exe` or `macOSClusToRa.dmg` from the `app` folder
@@ -42,11 +43,8 @@ Open your locally installed MATLAB application and run the same code shown above
 
 ## Running ClusToRa
 Start `ClusToRa` as described above. \
-The app has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. \
-💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
-
-⚠️ **Critical:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
-
+The app has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. \
+💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. \
 Below, we use the dataset from Tzouanas et al. (download and extract the compressed `TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
