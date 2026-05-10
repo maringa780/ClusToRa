@@ -52,19 +52,24 @@ Below, we use the dataset from Tzouanas et al. (download and extract the compres
 ### • ClusToRa Analysis
 _ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis. _See details_
 <details>
+   
    [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
    <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" /> 
 </details>
 
 ### • ClusToRa Plotting
+_ClusToRa Plotting_ tab allows you to plot results. _See details_
 <details>
+   
    [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md)
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
    dbefededf
    </details>
    
 ### • ClusToRa Differential
+_ClusToRa Differential_ tab allows you to load your expression files for niche-centric GSEA. _See details_
 <details>
+   
    [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md)
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
    fhfb
