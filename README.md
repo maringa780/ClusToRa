@@ -45,10 +45,10 @@ Open your locally installed MATLAB application and run the same code shown above
 Start `ClusToRa` as described above. \
 The app has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. \
 💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. \
-Below, we use the dataset from Tzouanas et al. (download and extract the compressed `TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
+Below, we use the dataset from Tzouanas et al. (download and extract the compressed `data/TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
-_ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis. _See details_
+_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. _See details_
 <details>
    
    [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
@@ -61,16 +61,14 @@ _ClusToRa Plotting_ tab allows you to plot results. _See details_
    
    [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md)
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
-   dbefededf
    </details>
    
 ### • ClusToRa Differential
-_ClusToRa Differential_ tab allows you to load your expression files for niche-centric GSEA. _See details_
+_ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential & GSEA. _See details_
 <details>
    
    [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md)
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
-   fhfb
 </details>
 
 # Dependencies
