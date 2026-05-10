@@ -5,69 +5,70 @@
 ### citation
 Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identifying structural recruitment and infiltration in spatial omics
 ## Installation Guide 
-#### Option 1: Windows Standalone Application 
-`ClusToRa` can be installed either as a standalone application (pre-compiled standalone if you do not have access to MATLAB license).
-#### Option 2: `ClusToRa` toolbox 
-Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=maringa780/ClusToRa)
-#### Option 3: `ClusToRa` toolbox 
-Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
-#### Option 4: `ClusToRa` manual download 
-Download this repository and add all it's contents/sub-folders to your MATLAB path.
-#### Option 6: Mac Standalone Application
-Search for `ClusToRa` in MATLAB addons and install the toolbox. Call `ClusToRa_GUI` in your command window to star `ClusToRa'
+#### Option 1: `ClusToRa` in MATLAB 
+###### Option 1.1 MATLAB online
+Clone `ClusToRa` in MATLAB online (_link below_) 
+> **Note:** You only need the last command when starting the app in future sessions.
+```matlab
+%% Confirm you have Git
+!git --version
+
+%% Clone ClusToRa repository
+!git clone https://github.com/maringa780/ClusToRa.git
+
+%% Start ClusToRa
+ClusToRa_startup
+```
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=maringa780/ClusToRa) \
+💡**Tip:** If you don’t have a MATLAB license, you can sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html) (Basic), which currently includes 20 free hours per month.
+###### Option 1.2 Desktop MATLAB
+Open your locally installed MATLAB application and run the same code shown above.
+> For local MATLAB, ensure you have the MATLAB toolboxes listed in the dependencies below.
+
+#### Option 2: Install `ClusToRa` as a Standalone Application on Windows/macOS  
+> Download `WindowsClusToRa.exe` or `macOSClusToRa.dmg` from the `app` folder
+##### Windows
+1. Download `WindowsClusToRa.exe`
+2. Double-click the installer/application file
+3. Follow the on-screen installation prompts
+4. Launch `ClusToRa` from the Start Menu or desktop shortcut
+> If Windows displays a security warning, click **More info** → **Run anyway**.
+##### macOS
+1. Download the macOS version `macOSClusToRa.dmg`
+2. Open the downloaded `.dmg` or application package
+3. Drag `ClusToRa` into the `Applications` folder
+4. Open the application from `Applications`
+> The first time you open the app, macOS may display a security warning because the app was downloaded from the internet.  
+> Go to **System Settings → Privacy & Security** and click **Open Anyway** if needed.
 
 ## Running ClusToRa
-`ClusToRa` has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. A file containing only cell XY coordinates and cell types is sufficient to use the first two components. The Differential module additionally requires an expression matrix. 
-#### Launching ClusToRa
-- **Windows:** To start using ClusToRa on Windows, click the shortcut icon created during installation.
-- **MATLAB:** To start using ClusToRa in MATLAB, enter:
-```matlab
-ClusToRa_GUI
-```
-
-💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
-
-⚠️ **Warning:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
-
+Start `ClusToRa` as described above. \
+The app has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. \
+💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. \
 Below, we use the dataset from Tzouanas et al. (download and extract the compressed `TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
 _ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis. _See details_
 <details>
-   <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" /> 
    
-1. **Step 1. Loading Metadata** \
--Prepare your metadata file. The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. \
--ClusToRa automatically detects the delimiter, or you can manually specify it using the **Delimiter** dropdown menu. \
--If your metadata contains long numeric barcodes, open the **Advanced** dropdown and enable **Long barcodes**. \
--Columns may have any names and can appear in any order, but column headers must be included in the first row. \
--Cell data can begin on row 2 or 3; the app will automatically detect the starting row. \
--A minimum of three fields is required: _(i) X coordinate, (ii) Y coordinate, (iii). Cell type_ \
--Click the **Metadata** icon and select your metadata file. \
--Once loaded, the detected column names will populate the **Columns** text field. \
--After loading is complete, click the red **Preview** button with the **meta** checkbox selected to preview the imported metadata. \
-
-2. **Assigning fields**
-Prepare your metadata file. The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.
-ClusToRa automatically detects the delimiter, or you can manually specify it using the **Delimiter** dropdown menu.
-If your metadata contains long numeric barcodes, open the **Advanced** dropdown and enable **Long barcodes**.
-Columns may have any names and can appear in any order, but column headers must be included in the first row.
-Cell data can begin on row 2 or 3; the app will automatically detect the starting row.
-
-3. **Setting parameters and starting analysis**
-   - Find **"iughbujk"** in the results.  
-   - Click the **Add** button to install the toolbox.
+   [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
+   <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" /> 
 </details>
 
 ### • ClusToRa Plotting
+_ClusToRa Plotting_ tab allows you to plot results. _See details_
 <details>
+   
+   [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md)
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
    dbefededf
    </details>
    
 ### • ClusToRa Differential
+_ClusToRa Differential_ tab allows you to load your expression files for niche-centric GSEA. _See details_
 <details>
+   
+   [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md)
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
    fhfb
 </details>
