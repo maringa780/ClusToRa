@@ -1,7 +1,7 @@
 <img width="800" height="500" alt="Illustrations1" src="https://github.com/user-attachments/assets/7e96f27d-5928-4ce5-8c5c-4be68f1eb1e6" /> 
 
 ### • ClusToRa Analysis
-[Illustration Video](https://youtu.be/oK7yI0D0D3o) \
+[Watch Illustration Video](https://youtu.be/oK7yI0D0D3o) \
 _ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
@@ -16,12 +16,15 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 
 **Section 2 (assigning columns to use)** \
 -`☑☐` <sub>**checkboxes** allows you to check where the selected column in section 1 will be asigned.</sub> \
--`X` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
--`Y` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
--`X` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
--`X` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
--`X` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
-⚠️ <sub>**Critical:** metadata columns may have any names and can appear in any order, but column headers **MUST** be included in the first row. Cell data can begin on row 2 or 3; the app will automatically detect the starting row. A **minimum of three fields** is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>  \
+---`X coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is x coordinates.</sub> \
+---`Y coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is y coordinates.</sub> \
+---`Cell type (Level 1)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is y coordinates.</sub> \
+---`Cell type (Level 2)` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
+💡<sub> **Tip:** If you wish your cell types to be arranged by a predefined grouping (say lineage), use `dropdown` next to `Cell type (Level 2)` to export the unique assigned cellt tyes from level 1. This saves a tab delimited `txt` file in the same folder as your metadat, which you can add your broader group(s) of cells, say lineage, to column 2 or more colums. Use same `dropdown` to import your edited `txt` that allows ClusToRa to sort your cell types.</sub> \
+---`Samples (Level 1)` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
+---`Samples (Level 2)` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
+-`assign barcodes` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
+⚠️ <sub>**Critical:** If you will be exploring differential analysis later, you must `assign barcodes` before you start `ClusToRa Analysis` </sub>  \
 
 **Section 3 (confirming columns and samples setup)**
    - Find **"iughbujk"** in the results.  
