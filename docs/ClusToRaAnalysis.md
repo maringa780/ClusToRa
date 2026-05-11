@@ -29,15 +29,21 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 ---`Samples (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the sample group or condition. Omit this if analyzing only one sample. Required if the metadata contains multiple samples. If your dataset contains grouped samples, assign the group/category here and assign individual samples under `Samples (Level 2)`.</sub> \
 ---`Samples (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as the individual sample identifiers corresponding to the groups defined in `Samples (Level 1)`.</sub> \
 -`assign barcodes` <sub>**button** used to assign the selected column as the barcode/cell ID field for the dataset (required if computing downstream differential analysis).</sub> \
-⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  \
+⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  
 
-**Section 3 (confirming columns and samples setup)**
-   - Find **"iughbujk"** in the results.  
-   - Click the **Add** button to install the toolbox. \
--After loading is complete, click the red **Preview** button with the **meta** checkbox selected to preview the imported metadata. 
+**Section 3 (Preview table and spatial distribution of X/Y coordinates)**
+-`☑☐` <sub>**checkboxes** used to specify which type of preview will be displayed.</sub> \
+---`meta` <sub>**checkbox** indicating that the preview will display the loaded metadata table.</sub> \
+---`xyg` <sub>**checkbox** indicating that the preview will display the spatial X/Y distribution of cells, with cell types pseudo-colored by annotation. This is ⚠️ useful/critical for verifying that the correct sample grouping and assignments were used.</sub> \
+-`Preview` <sub>**button** used to generate and display the selected preview.</sub> 
+
 **Section 4 (ClusToRa parameters setup)**
-   - Find **"iughbujk"** in the results.  
-   - Click the **Add** button to install the toolbox. \
+-`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript..</sub> \
+-`min cells` <sub>**numeric input** defining the minimum number of cells required to form a DBSCAN cluster. Default: `4` </sub> \
+-`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
+-`clumpiness` <sub>**checkbox** indicating whether to compute the Clark–Evans index for cluster centroids.</sub> \
+-`Threads>` <sub>**numeric input** defining the number of threads to use for parallel computation. Default: maximum available threads (automatically determined by the app once the minimum required assignments are completed).</sub> \
+-`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> \
 
 **Section 3 (ClusToRa analysis and saving)**
    - Find **"iughbujk"** in the results.  
