@@ -2,8 +2,9 @@
 
 ### • ClusToRa Analysis
 [Illustration Video](https://youtu.be/oK7yI0D0D3o) \
-_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below.
-   
+_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below. \
+💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
+
 **Section 1** \
 -`Metadata` <sub>button allows you to load your metadata file (cells are rows, variables are columns). The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
 -`delimiter` <sub>dropdown menu allows manual specification of your metadata delimiter, default:auto.</sub> \
