@@ -16,12 +16,12 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 
 [**Section 2 (Assigning columns to use)**](#) \
 💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
--`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> \
+-`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> 
 > Required assignments
 
 ---`X coord` <sub>**checkbox** indicating that the selected column should be assigned as the X coordinates (required).</sub> \
 ---`Y coord` <sub>**checkbox** indicating that the selected column should be assigned as the Y coordinates (required).</sub> \
----`Cell type (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the primary cell type annotation (required).</sub> \
+---`Cell type (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the primary cell type annotation (required).</sub> 
 > Optional assignments
 
 ---`Cell type (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as a higher-level grouping of cell types (optional). Useful for organizing cell types into broader categories such as lineage or functional classes.</sub> \
@@ -43,10 +43,10 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
 -`clumpiness` <sub>**checkbox** indicating whether to compute the Clark–Evans index for cluster centroids.</sub> \
 -`Threads>` <sub>**numeric input** defining the number of threads to use for parallel computation. Default: maximum available threads (automatically determined by the app once the minimum required assignments are completed).</sub> \
--`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> \
+-`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> 
 
 [**Section 5 (ClusToRa analysis and saving)**](#) \
--`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file.. </sub> \
+-`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file. </sub> \
 -`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
 -`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
--`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> \
+-`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> 
