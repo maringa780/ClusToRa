@@ -15,7 +15,7 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 ⚠️ <sub>**Critical:** Metadata columns may have any names and appear in any order, but column headers MUST be included in the first row. Cell data may begin on row 2 or 3; the app automatically detects the starting row. A minimum of three fields is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>
 
 [**Section 2 (Assigning columns to use)**](#) \
-💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
+💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3** to help with assigning.</sub> \
 -`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> 
 > Required assignments
 
