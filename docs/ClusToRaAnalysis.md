@@ -5,7 +5,7 @@
 _ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
-**Section 1 (Loading metadata)** \
+[**Section 1 (Loading metadata)**](#) \
 -`Metadata` <sub>**button** used to load your metadata file (cells as rows, variables as columns). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
 -`delimiter` <sub>**dropdown** menu allowing manual specification of the metadata delimiter. Default: `auto`</sub> \
 -`advanced` <sub>**dropdown** menu containing the `Long barcodes` option. Enable this if your metadata contains long numeric barcodes (common in some Vizgen MERFISH datasets).</sub> \
@@ -14,7 +14,7 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`Clear<` <sub>that removes the assigned column from the checked field(s) in **Section 2**.</sub> \
 ⚠️ <sub>**Critical:** Metadata columns may have any names and appear in any order, but column headers MUST be included in the first row. Cell data may begin on row 2 or 3; the app automatically detects the starting row. A minimum of three fields is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>
 
-**Section 2 (Assigning columns to use)** \
+[**Section 2 (Assigning columns to use)**](#) \
 💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
 -`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> \
 > Required assignments
@@ -31,21 +31,22 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`assign barcodes` <sub>**button** used to assign the selected column as the barcode/cell ID field for the dataset (required if computing downstream differential analysis).</sub> \
 ⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  
 
-**Section 3 (Preview table and spatial distribution of X/Y coordinates)**
+[**Section 3 (Preview table and spatial distribution of X/Y coordinates)**](#)
 -`☑☐` <sub>**checkboxes** used to specify which type of preview will be displayed.</sub> \
 ---`meta` <sub>**checkbox** indicating that the preview will display the loaded metadata table.</sub> \
 ---`xyg` <sub>**checkbox** indicating that the preview will display the spatial X/Y distribution of cells, with cell types pseudo-colored by annotation. This is ⚠️ useful/critical for verifying that the correct sample grouping and assignments were used.</sub> \
 -`Preview` <sub>**button** used to generate and display the selected preview.</sub> 
 
-**Section 4 (ClusToRa parameters setup)**
--`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript..</sub> \
+[**Section 4 (ClusToRa parameters setup)**](#)
+-`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
 -`min cells` <sub>**numeric input** defining the minimum number of cells required to form a DBSCAN cluster. Default: `4` </sub> \
 -`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
 -`clumpiness` <sub>**checkbox** indicating whether to compute the Clark–Evans index for cluster centroids.</sub> \
 -`Threads>` <sub>**numeric input** defining the number of threads to use for parallel computation. Default: maximum available threads (automatically determined by the app once the minimum required assignments are completed).</sub> \
 -`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> \
 
-**Section 3 (ClusToRa analysis and saving)**
-   - Find **"iughbujk"** in the results.  
-   - Click the **Add** button to install the toolbox. \
-⚠️ $${\color{red}Critical: \space}$$ Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
+[**Section 5 (ClusToRa analysis and saving)**](#)
+-`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file.. </sub> \
+-`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
+-`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
+-`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> \
