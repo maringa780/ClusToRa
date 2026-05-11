@@ -48,7 +48,7 @@ The app has three main components — **Analysis**, **Plotting**, and **Differen
 Below, we use the dataset from Tzouanas et al. (download and extract the compressed `data/TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
-_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. _See details_
+_ClusToRa Analysis_ tab allows you to load and analyze your spatial data. _See details_
 <details>
    
    [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
