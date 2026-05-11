@@ -31,13 +31,13 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`assign barcodes` <sub>**button** used to assign the selected column as the barcode/cell ID field for the dataset (required if computing downstream differential analysis).</sub> \
 ⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  
 
-[**Section 3 (Preview table and spatial distribution of X/Y coordinates)**](#)
+[**Section 3 (Preview table and spatial distribution of X/Y coordinates)**](#) \
 -`☑☐` <sub>**checkboxes** used to specify which type of preview will be displayed.</sub> \
 ---`meta` <sub>**checkbox** indicating that the preview will display the loaded metadata table.</sub> \
 ---`xyg` <sub>**checkbox** indicating that the preview will display the spatial X/Y distribution of cells, with cell types pseudo-colored by annotation. This is ⚠️ useful/critical for verifying that the correct sample grouping and assignments were used.</sub> \
 -`Preview` <sub>**button** used to generate and display the selected preview.</sub> 
 
-[**Section 4 (ClusToRa parameters setup)**](#)
+[**Section 4 (ClusToRa parameters setup)**](#) \
 -`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
 -`min cells` <sub>**numeric input** defining the minimum number of cells required to form a DBSCAN cluster. Default: `4` </sub> \
 -`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
@@ -45,7 +45,7 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`Threads>` <sub>**numeric input** defining the number of threads to use for parallel computation. Default: maximum available threads (automatically determined by the app once the minimum required assignments are completed).</sub> \
 -`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> \
 
-[**Section 5 (ClusToRa analysis and saving)**](#)
+[**Section 5 (ClusToRa analysis and saving)**](#) \
 -`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file.. </sub> \
 -`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
 -`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
