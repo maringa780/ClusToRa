@@ -2,7 +2,7 @@
 
 
 ### • ClusToRa Analysis
-_ClusToRa Analysis_ tab allows you to load your coordinates, cell types, and additional data such as sample groups, sample IDs, and barcodes/cell IDs (if you plan to load a differential matrix later) for analysis.
+_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis.
    
 1. **Step 1. Loading Metadata** \
 -Prepare your metadata file. The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. \
