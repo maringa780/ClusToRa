@@ -6,11 +6,11 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
 **Section 1 (loading metadata)** \
--`Metadata` <sub>button allows you to load your metadata file (cells are rows, variables are columns). The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
--`delimiter` <sub>dropdown menu allows manual specification of your metadata delimiter, default:auto.</sub> \
--`advanced` <sub>dropdown enables 'Long barcodes' option, use it if your metadata contains long numeric barcodes (common with some Vizgen MERFISH datasets).</sub> \
--`Columns` <sub>text area populates with detected column names once metadata file is succefuly loaded.</sub> \
-⚠️**Critical:** <sub> metadata columns may have any names and can appear in any order, but column headers MUST be included in the first row. Cell data can begin on row 2 or 3; the app will automatically detect the starting row. A minimum of three fields is required: _(i) X coordinate, (ii) Y coordinate, (iii). Cell type_ </sub>  
+-`Metadata` <sub>**button** allows you to load your metadata file (cells are rows, variables are columns). The app accepts the following formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
+-`delimiter` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
+-`advanced` <sub>**dropdown** enables 'Long barcodes' option, use it if your metadata contains long numeric barcodes (common with some Vizgen MERFISH datasets).</sub> \
+-`Columns` <sub>**text area** populates with detected column names once metadata file is succefuly loaded.</sub> \
+⚠️ <sub>**Critical:** metadata columns may have any names and can appear in any order, but column headers MUST be included in the first row. Cell data can begin on row 2 or 3; the app will automatically detect the starting row. A minimum of three fields is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>  
 
 **Section 2 (assigning columns to use)**
 -After loading is complete, click the red **Preview** button with the **meta** checkbox selected to preview the imported metadata. 
