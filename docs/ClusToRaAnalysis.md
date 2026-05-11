@@ -17,17 +17,19 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 **Section 2 (Assigning columns to use)** \
 💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
 -`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> \
-> Required assignments < \
----`X coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for x coordinates(required).</sub> \
----`Y coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for y coordinates(required).</sub> \
----`Cell type (Level 1)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for cell types (required).</sub> \
-> Optional assignments <\
----`Cell type (Level 2)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for cell types groups (optional: Useful if you wish to sort your cell types by groups)..</sub> \
-💡<sub> **Tip:** If you wish your cell types to be arranged by a predefined grouping (say lineage), use `dropdown` next to `Cell type (Level 2)` to export the unique assigned cellt tyes from level 1. This saves a tab delimited `txt` file in the same folder as your metadat, which you can add your broader group(s) of cells, say lineage, to column 2 or more colums. Use same `dropdown` to import your edited `txt`, the app will add the new colums to `column` **text area** that allows you to assign level 2 for ClusToRa to sort your cell types.</sub> \
----`Samples (Level 1)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for the different groups or samples (Omit if you loaded just one sample, required if your metadata has more than one sample. If your data has groups of samples, this would be the level to assign those groups, in which case, the individual samples would be asigned in `Samples (Level 2)`).</sub> \
----`Samples (Level 2)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for the different samples of the group(s) in `Samples (Level 1)`.</sub> \
--`assign barcodes` <sub>**button** assigns the selected column to be the barcodes of your dataset (required if exploring differential analysis later).</sub> \
-⚠️ <sub>**Critical:** If you will be exploring differential analysis later, you MUST `assign barcodes` before you start `ClusToRa Analysis` </sub>  \
+> Required assignments
+
+---`X coord` <sub>**checkbox** indicating that the selected column should be assigned as the X coordinates (required).</sub> \
+---`Y coord` <sub>**checkbox** indicating that the selected column should be assigned as the Y coordinates (required).</sub> \
+---`Cell type (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the primary cell type annotation (required).</sub> \
+> Optional assignments
+
+---`Cell type (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as a higher-level grouping of cell types (optional). Useful for organizing cell types into broader categories such as lineage or functional classes.</sub> \
+💡<sub> **Tip:** If you want your cell types grouped by predefined categories (e.g., lineage), use the `dropdown` next to `Cell type (Level 2)` to export the unique cell types assigned in `Level 1`. This creates a tab-delimited `.txt` file in the same folder as your metadata. You can then add broader group labels (e.g., lineage) in column 2 or additional columns. Re-import the edited `.txt` file using the same `dropdown`; the new columns will be added to the `Columns` text area, allowing assignment to `Cell type (Level 2)` for sorting and grouping within `ClusToRa`. </sub> \
+---`Samples (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the sample group or condition. Omit this if analyzing only one sample. Required if the metadata contains multiple samples. If your dataset contains grouped samples, assign the group/category here and assign individual samples under `Samples (Level 2)`.</sub> \
+---`Samples (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as the individual sample identifiers corresponding to the groups defined in `Samples (Level 1)`.</sub> \
+-`assign barcodes` <sub>**button** used to assign the selected column as the barcode/cell ID field for the dataset (required if computing downstream differential analysis).</sub> \
+⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  \
 
 **Section 3 (confirming columns and samples setup)**
    - Find **"iughbujk"** in the results.  
