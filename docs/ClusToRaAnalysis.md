@@ -1,6 +1,5 @@
 <img width="800" height="500" alt="Illustrations1" src="https://github.com/user-attachments/assets/7e96f27d-5928-4ce5-8c5c-4be68f1eb1e6" />
 
-
 ### • ClusToRa Analysis
 _ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis.
    
@@ -24,7 +23,5 @@ Cell data can begin on row 2 or 3; the app will automatically detect the startin
 
 3. **Setting parameters and starting analysis**
    - Find **"iughbujk"** in the results.  
-   - Click the **Add** button to install the toolbox.
-⚠️ **Critical:** Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
-
-
+   - Click the **Add** button to install the toolbox. \
+⚠️ $${\color{red}Critical: \space}$$ Analysis must be performed using coordinates from the same tissue section, as null model randomizations are generated within that same tissue. See the _ClusToRa Analysis_ section below for instructions on setting up sample levels and previewing your configuration for a sanity check.
