@@ -1,4 +1,4 @@
-<img width="2858" height="1785" alt="Illustrations2" src="https://github.com/user-attachments/assets/9f2ac8c2-bb7c-429f-9c30-39ac2ab97f72" />
+<img width="800" height="500" alt="Illustrations2" src="https://github.com/user-attachments/assets/9f2ac8c2-bb7c-429f-9c30-39ac2ab97f72" />
 
 
 ### • ClusToRa Plotting
