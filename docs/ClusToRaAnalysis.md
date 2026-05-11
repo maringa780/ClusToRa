@@ -17,11 +17,11 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 **Section 2 (Assigning columns to use)** \
 💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
 -`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> \
-
+> Required assignments < \
 ---`X coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for x coordinates(required).</sub> \
 ---`Y coord` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for y coordinates(required).</sub> \
 ---`Cell type (Level 1)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for cell types (required).</sub> \
-
+> Optional assignments <\
 ---`Cell type (Level 2)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for cell types groups (optional: Useful if you wish to sort your cell types by groups)..</sub> \
 💡<sub> **Tip:** If you wish your cell types to be arranged by a predefined grouping (say lineage), use `dropdown` next to `Cell type (Level 2)` to export the unique assigned cellt tyes from level 1. This saves a tab delimited `txt` file in the same folder as your metadat, which you can add your broader group(s) of cells, say lineage, to column 2 or more colums. Use same `dropdown` to import your edited `txt`, the app will add the new colums to `column` **text area** that allows you to assign level 2 for ClusToRa to sort your cell types.</sub> \
 ---`Samples (Level 1)` <sub>**checkbox** checked informs `Assign>` or `Clear<` that the column to be asigned or cleared is for the different groups or samples (Omit if you loaded just one sample, required if your metadata has more than one sample. If your data has groups of samples, this would be the level to assign those groups, in which case, the individual samples would be asigned in `Samples (Level 2)`).</sub> \
