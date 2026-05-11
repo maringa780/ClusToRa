@@ -10,9 +10,8 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`delimiter` <sub>**dropdown** menu allows manual specification of your metadata delimiter, default:auto.</sub> \
 -`advanced` <sub>**dropdown** enables 'Long barcodes' option, use it if your metadata contains long numeric barcodes (common with some Vizgen MERFISH datasets).</sub> \
 -`Columns` <sub>**text area** populates with detected column names once metadata file is succefuly loaded.</sub> \
--`Assign` <sub>**button** asigns the selecten column to the checked box in **section 2**.<sub\> \
--`Clear` <sub>**button** removes the assigned column in the checked box in **section 2**.<sub\> 
-
+-`Assign>` <sub>**button** asigns the selecten column to the checked box in section 2. </sub> \
+-`Clear<` <sub>button removes the assigned column in the checked box in **section 2**.</sub> \
 ⚠️ <sub>**Critical:** metadata columns may have any names and can appear in any order, but column headers **MUST** be included in the first row. Cell data can begin on row 2 or 3; the app will automatically detect the starting row. A **minimum of three fields** is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>
 
 **Section 2 (assigning columns to use)** \
