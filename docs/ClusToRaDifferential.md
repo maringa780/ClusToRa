@@ -1,4 +1,4 @@
-<img width="2862" height="1786" alt="Illustrations3" src="https://github.com/user-attachments/assets/97808829-141f-4f71-ba85-844d39b19ac5" />
+<img width="800" height="499" alt="image" src="https://github.com/user-attachments/assets/cf0b8779-7638-426b-b6de-dd24fe58bcfd" />
 
 ## • ClusToRa Differential
 <details>
