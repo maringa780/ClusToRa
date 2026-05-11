@@ -48,7 +48,7 @@ The app has three main components — **Analysis**, **Plotting**, and **Differen
 Below, we use the dataset from Tzouanas et al. (download and extract the compressed `data/TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
 
 ### • ClusToRa Analysis
-_ClusToRa Analysis_ tab allows you to load and analyze your spatial data. _See details_
+_ClusToRa Analysis_ tab allows you to load and analyze your spatial data. **_See details_**
 <details>
    
    [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
@@ -56,7 +56,7 @@ _ClusToRa Analysis_ tab allows you to load and analyze your spatial data. _See d
 </details>
 
 ### • ClusToRa Plotting
-_ClusToRa Plotting_ tab allows you to plot results. _See details_
+_ClusToRa Plotting_ tab allows you to plot results. **_See details_**
 <details>
    
    [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md)
@@ -64,7 +64,7 @@ _ClusToRa Plotting_ tab allows you to plot results. _See details_
    </details>
    
 ### • ClusToRa Differential
-_ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential & GSEA. _See details_
+_ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential & GSEA. **_See details_**
 <details>
    
    [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md)
