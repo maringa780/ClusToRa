@@ -44,8 +44,9 @@ Open your locally installed MATLAB application and run the same code shown above
 ## Running ClusToRa
 Start `ClusToRa` as described above. \
 The app has three main components — **Analysis**, **Plotting**, and **Differential** — each accessible through its own tab within the app. \
-💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. \
-Below, we use the dataset from Tzouanas et al. (download and extract the compressed `data/TzouanasDataset.tar.gz` file included in this repository), as analyzed in our cited work, to demonstrate how to navigate and use `ClusToRa`.
+💡**Tip:** Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality. 
+
+Below, we use the dataset from Tzouanas _et al._, as analyzed in our cited work, to demonstrate how to navigate and use ClusToRa. Cloning the repository should automatically download the dataset; otherwise, download it manually. Extract the compressed file using: `untar('TzouanasDataset.tar.gz')`.
 
 ### • ClusToRa Analysis
 _ClusToRa Analysis_ tab allows you to load and analyze your spatial data. **_See details_**
