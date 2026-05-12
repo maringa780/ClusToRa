@@ -52,7 +52,7 @@ Below, we use the dataset from Tzouanas _et al._, as analyzed in our cited work,
 _ClusToRa Analysis_ tab allows you to load and analyze your spatial data. **_See details_**
 <details>
    
-   [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md)
+   [More detailed ClusToRa Analysis instructions](docs/ClusToRaAnalysis.md) \
    <img width="600" height="299" alt="image" src="https://github.com/user-attachments/assets/414cfdaf-4c8e-484f-a7fc-14277630524b" /> 
 </details>
 
@@ -60,7 +60,7 @@ _ClusToRa Analysis_ tab allows you to load and analyze your spatial data. **_See
 _ClusToRa Plotting_ tab allows you to plot results. **_See details_**
 <details>
    
-   [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md)
+   [More detailed ClusToRa Plotting instructions](docs/ClusToRaPlotting.md) \
    <img width="600" height="302" alt="image" src="https://github.com/user-attachments/assets/3a7470e1-8da6-4b32-b175-553ed43fb614" />
    </details>
    
@@ -68,7 +68,7 @@ _ClusToRa Plotting_ tab allows you to plot results. **_See details_**
 _ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential & GSEA. **_See details_**
 <details>
    
-   [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md)
+   [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md) \
 <img width="600" height="303" alt="image" src="https://github.com/user-attachments/assets/4ee28030-74fa-494d-812c-4432edb55a03" />
 </details>
 
