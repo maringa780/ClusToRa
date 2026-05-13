@@ -19,17 +19,17 @@ _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visua
 ---`fill option` <sub>**dropdown** menu used to define the metric used to color the bubbles.</sub> \
 ---`O size` <sub>**dropdown** menu used to define whether bubble sizes remain constant or vary according to a selected metric.</sub> 
 
-[**Section 3 (Chord plots parameters)**](#) \
--`score` <sub>**dropdown** menu used to define type of plot. ClusToRa `Z-scores` or `In/Out (log2FC)` (log2 of Infiltration/Envelopment ratio), as described in the ClusToRa manuscript.</sub> \
--`Thresh` <sub>**numeric input** defining the -/+ number to thershold for the selected `score` option to plot. Default: 1.96 for `Z-scores`, zero for `In/Out (log2FC)` as we compute this ration only from interactions with positive 1.96 zscores. </sub> \
--`Colormap` <sub>**dropdown** menu used to define colormap to use. Default: custom `ClusToRa_colormap`. Next to this is a **dropdown** menu for whwteher to use colorscale that spans all the z-scores (`Auto`) or maximum z-score in the interactions to plot (`local`)</sub> \
-💡<sub> **Tip:** A visisble colormap bar appeara in this tab corresponding to the colormap selected.</sub> \
--`To plot / preview` <sub>**dropdown** menu for whether to plot samples at `Level1` or `Level2` (setup dependent). If you have two levels and `Level1` option is selected, plots will be for the group you highlight in `Level1` text area. If you have two levels and `Level2` is selected, then the samples you highlight in `Level2`textarea will be plotted. If you only have one level, sample highted in `Level1` text area will be plotted </sub> \
--`colors` <sub>**dropdown** menu for wheteher to auto deteremine the colors for each cell type. `export` option outputs a text file with the cell types (column 1) and auto determined rowwise `rgb` color values (range 0 to 1) (column 2 to4). You can change these `rgb` values for custom colors and use `import` option to load your file. Deafault: auto. </sub> \
-💡<sub> **Tip:** If you wish to sort your chord cell types order, you can rearrange the row, no need to change the associated rgb if you still want to maintain the auto dteremined colors.</sub> \
--`%min sample` <sub>**numeric input** defining the minimun percent number of samples representing an interaction in the selected group that will be plotted.</sub> \
--`alpha` <sub>**numeric input** defining transpareny for your chord arraow (this allows you for better visualizations as arrow crisscross each other).</sub> \
--`Chord` <sub>**button** Plots the chord based on the above parameters.</sub> 
+[**Section 3 (Chord plot parameters)**](#) \
+-`score` <sub>**dropdown** menu used to define the interaction metric to plot: ClusToRa `Z-scores` or `In/Out (log2FC)` (log2 of Infiltration/Envelopment ratio), as described in the ClusToRa manuscript..</sub> \
+-`Thresh` <sub>**numeric input** defining the positive/negative threshold value used for plotting interactions based on the selected `score` option. Default: `1.96` for `Z-scores`; `0` for `In/Out (log2FC)` since this ratio is computed only for interactions with positive `1.96` z-scores.. </sub> \
+-`Colormap` <sub>**dropdown** menu used to define the colormap for plotting. Default: custom one called `ClusToRa_colormap`. An adjacent **dropdown** menu defines whether the color scale spans all available z-scores (`Auto`) or only the maximum score within the plotted interactions (`Local`).</sub> \
+💡<sub> **Tip:** A visible colormap bar appears in this tab corresponding to the selected colormap.</sub> \
+-`To plot / preview` <sub>**dropdown** menu used to define whether plots are generated from `Level1` or `Level2` assignments (setup dependent). If two levels exist and `Level1` is selected, plots will be generated for the highlighted group in the `Level1` text area. If `Level2` is selected, highlighted samples from the `Level2` text area will be plotted. If only one level exists, highlighted samples in `Level1` will be plotted. </sub> \
+-`colors` <sub>**dropdown** menu defining whether cell-type colors are automatically assigned. Selecting `export` outputs a text file containing cell types (column 1) and their corresponding row-wise `RGB` color values (columns 2–4; values range from `0–1`). You may edit these RGB values to create custom color schemes and reload them using the `import` option. Default: `auto`. </sub> \
+💡<sub> **Tip:** To customize the ordering of cell types in chord plots, simply rearrange the rows in the exported file. There is no need to modify the associated RGB values if you wish to preserve the automatically assigned colors.</sub> \
+-`%min sample` <sub>**numeric input** defining the minimum percentage of samples within the selected group that must contain a given interaction for it to be plotted.</sub> \
+-`alpha` <sub>**numeric input** defining transparency of chord arrows. Adjusting transparency improves visualization when multiple interaction arrows overlap..</sub> \
+-`Chord` <sub>**button** generates the chord plot using the selected parameters.</sub> 
 
 [**Section 4 (ClusToRa parameters setup)**](#) \
 -`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
