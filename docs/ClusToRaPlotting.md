@@ -31,8 +31,9 @@ _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visua
 -`alpha` <sub>**numeric input** defining transparency of chord arrows. Adjusting transparency improves visualization when multiple interaction arrows overlap..</sub> \
 -`Chord` <sub>**button** generates the chord plot using the selected parameters.</sub> 
 
-[**Section 4 (ClusToRa parameters setup)**](#) \
--`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
+[**Section 4 (Scatter plot parameters)**](#) \
+-`Options` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
+`☑☐` <sub>**checkboxes** used to specify which type of preview will be displayed.</sub> \
 -`min cells` <sub>**numeric input** defining the minimum number of cells required to form a DBSCAN cluster. Default: `4` </sub> \
 -`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
 -`clumpiness` <sub>**checkbox** indicating whether to compute the Clark–Evans index for cluster centroids.</sub> \
@@ -45,6 +46,11 @@ _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visua
 -`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
 -`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> 
 
+[**Section 5 (ClusToRa analysis and saving)**](#) \
+-`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file.. </sub> \
+-`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
+-`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
+-`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> 
 
 > Optional assignments
 
