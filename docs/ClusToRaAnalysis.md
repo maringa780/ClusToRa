@@ -1,7 +1,7 @@
 <img width="800" height="500" alt="Illustrations1" src="https://github.com/user-attachments/assets/7e96f27d-5928-4ce5-8c5c-4be68f1eb1e6" /> 
 
 ### • ClusToRa Analysis
-[Watch Illustration Video on ClusToRa Analysis](https://youtu.be/oK7yI0D0D3o) \
+**::** [Watch Illustration Video on ClusToRa Analysis](https://youtu.be/oK7yI0D0D3o) \
 _ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
