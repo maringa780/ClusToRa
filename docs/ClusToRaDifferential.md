@@ -12,8 +12,12 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 `ALL in one` <sub>**button** used to load your expression data file (cells as rows, features like genes as columns) barcodes should be in column one, column headders (row one) should be our feature names. Your barcodes must be present in the metadata barcodes (file you did Clustora analysis on). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`..</sub> \
 -Option 2: \
 `barcodes` <sub>**button** used to load your expression data barcodes (if file has multiple columns,column one will be used). Suceeful loading of barcodes activates `features` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
-`features` <sub>**button** used to load your expression data features (genes) (if file has multiple columns,column one will be used). Suceeful loading of featutres activates `MTX file` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
-`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres size. Suceeful loading of expression matrix activates . Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`features` <sub>**button** used to load your expression data features (genes) (if file has multiple columns,column one will be used). Succesful loading of featutres activates `MTX file` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres/genes size. </sub> \
+`Preview load` <sub>**button** opens a table with 100 rows and 100 colums allowing you to preview the barcodes, features/genes and expressiob matrix. </sub> \
+`Preview Exp` <sub>**button** randomly picks 50 cells and box plots there features/genes expression, useful to see if data might be normalized. </sub> \
+`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres/genes size. </sub> \
+`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres/genes size. </sub> \
 
 [**Section 2 (Cell-type composition & cluster summaries)**](#) \
 💡<sub> **Tip:** To activate this section, first generate any chord plot in **Section 3**. This initializes the cell-type color assignments used for stacked bar plots and related visualizations.</sub> \
