@@ -3,51 +3,62 @@
 ## • ClusToRa Differential
 **::** [Watch Illustration Video on Setting up Differential analysis](https://youtu.be/oK7yI0D0D3o) \
 **::** [Watch Illustration Video on calling GSEA](https://youtu.be/oK7yI0D0D3o) \
-_ClusToRa Analysis_ tab allows you to load your metadata file containing coordinates, cell types (minimum requirement), and additional data such as sample groups, sample IDs, and barcodes/cell IDs (etc) for analysis. Highlighted section (1-5) are detailed below. \
+_ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential gene analysis . Highlighted sections (1–4) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
-[**Section 1 (Loading metadata)**](#) \
--`Metadata` <sub>**button** used to load your metadata file (cells as rows, variables as columns). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
--`delimiter` <sub>**dropdown** menu allowing manual specification of the metadata delimiter. Default: `auto`</sub> \
--`advanced` <sub>**dropdown** menu containing the `Long barcodes` option. Enable this if your metadata contains long numeric barcodes (common in some Vizgen MERFISH datasets).</sub> \
--`Columns` <sub>**text area** that populates with detected column names after the metadata file is successfully loaded.</sub> \
--`Assign>` <sub>**button** that assigns the selected column to the checked field(s) in **Section 2**. </sub> \
--`Clear<` <sub>that removes the assigned column from the checked field(s) in **Section 2**.</sub> \
-⚠️ <sub>**Critical:** Metadata columns may have any names and appear in any order, but column headers MUST be included in the first row. Cell data may begin on row 2 or 3; the app automatically detects the starting row. A minimum of three fields is required: (i) $${\color{red}X coordinates \space}$$ (ii) $${\color{red}Y coordinates \space}$$ (iii) $${\color{red}Cell types \space}$$  </sub>
+[**Section 1 (Loading expression data)**](#) \
+⚠️ <sub>**Critical:** To enable functions of this tab, metadata barcodes must have been setup in the ClusTora analsysis tab to ensure Clustora analysis has barcodes that will be matched to the expression data loaded here (the app handles alignment of metadata and expresion adta barcodes).</sub> 
+-Option 1: `ALL in one` <sub>**button** used to load your expression data file (cells as rows, features like genes as columns) barcodes should be in column one, column headders (row one) should be our feature names. Your barcodes must be present in the metadata barcodes (file you did Clustora analysis on). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`..</sub> \
+-`loaded` vs `drive` <sub>**switch** specifying whether to import results from the currently loaded session or from a saved file on disk. </sub> \
+-`Level1` <sub>**text area** populated using the assignments from `Cell type (Level 1)` in the ClusToRa Analysis tab. Use this to select groups or samples for plotting. </sub> \
+-`Level2` <sub>**text area** populated using assignments from `Cell type (Level 2)` in the ClusToRa Analysis tab. Use this to select samples for plotting when a second grouping level was defined. </sub> 
 
-[**Section 2 (Assigning columns to use)**](#) \
-💡<sub> **Tip:** Preview the metadata table as outlined in **Section 3**.</sub> \
--`☑☐` <sub>**checkboxes** used to specify where the selected column from Section 1 should be assigned.</sub> 
-> Required assignments
+[**Section 2 (Cell-type composition & cluster summaries)**](#) \
+💡<sub> **Tip:** To activate this section, first generate any chord plot in **Section 3**. This initializes the cell-type color assignments used for stacked bar plots and related visualizations.</sub> \
+-`Clusters & bars summary` <sub>**button** generates 1–3 plots (depending on setup) together with their associated tables, which can be exported as .xlsx or .txt files.  </sub> \
+<sub>1) A stacked bar plot showing the percentage relative abundance of cell types across samples, together with the table used for plotting. If higher-level cell-type grouping was assigned (`Cell type (Level 2)`), an additional grouped bar plot is generated.</sub> \
+<sub>2) If `clumpiness` was computed (Clark–Evans index for cluster centroids), a bubble plot summarizing Clark–Evans index values and the percentage of cells participating in clusters is generated, together with associated tables.</sub>
+---`fill option` <sub>**dropdown** menu used to define the metric used to color the bubbles.</sub> \
+---`O size` <sub>**dropdown** menu used to define whether bubble sizes remain constant or vary according to a selected metric.</sub> 
 
----`X coord` <sub>**checkbox** indicating that the selected column should be assigned as the X coordinates (required).</sub> \
----`Y coord` <sub>**checkbox** indicating that the selected column should be assigned as the Y coordinates (required).</sub> \
----`Cell type (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the primary cell type annotation (required).</sub> 
-> Optional assignments
+[**Section 3 (Chord plot parameters)**](#) \
+-`score` <sub>**dropdown** menu used to define the interaction metric to plot: ClusToRa `Z-scores` or `In/Out (log2FC)` (log2 of Infiltration/Envelopment ratio), as described in the ClusToRa manuscript..</sub> \
+-`Thresh` <sub>**numeric input** defining the positive/negative threshold value used for plotting interactions based on the selected `score` option. Default: `1.96` for `Z-scores`; `0` for `In/Out (log2FC)` since this ratio is computed only for interactions with positive `1.96` z-scores.. </sub> \
+-`Colormap` <sub>**dropdown** menu used to define the colormap for plotting. Default: custom one called `ClusToRa_colormap`. An adjacent **dropdown** menu defines whether the color scale spans all available z-scores (`Auto`) or only the maximum score within the plotted interactions (`Local`).</sub> \
+💡<sub> **Tip:** A visible colormap bar appears in this tab corresponding to the selected colormap.</sub> \
+-`To plot / preview` <sub>**dropdown** menu used to define whether plots are generated from `Level1` or `Level2` assignments (setup dependent). If two levels exist and `Level1` is selected, plots will be generated for the highlighted group in the `Level1` text area. If `Level2` is selected, highlighted samples from the `Level2` text area will be plotted. If only one level exists, highlighted samples in `Level1` will be plotted. </sub> \
+-`colors` <sub>**dropdown** menu defining whether cell-type colors are automatically assigned. Selecting `export` outputs a text file containing cell types (column 1) and their corresponding row-wise `RGB` color values (columns 2–4; values range from `0–1`). You may edit these RGB values to create custom color schemes and reload them using the `import` option. Default: `auto`. </sub> \
+💡<sub> **Tip:** To customize the ordering of cell types in chord plots, simply rearrange the rows in the exported file. There is no need to modify the associated RGB values if you wish to preserve the automatically assigned colors.</sub> \
+-`%min sample` <sub>**numeric input** defining the minimum percentage of samples within the selected group that must contain a given interaction for it to be plotted.</sub> \
+-`alpha` <sub>**numeric input** defining transparency of chord arrows. Adjusting transparency improves visualization when multiple interaction arrows overlap..</sub> \
+-`Chord` <sub>**button** generates the chord plot using the selected parameters.</sub> 
 
----`Cell type (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as a higher-level grouping of cell types (optional). Useful for organizing cell types into broader categories such as lineage or functional classes.</sub> \
-💡<sub> **Tip:** If you want your cell types grouped by predefined categories (e.g., lineage), use the `dropdown` next to `Cell type (Level 2)` to export the unique cell types assigned in `Level 1`. This creates a tab-delimited `.txt` file in the same folder as your metadata. You can then add broader group labels (e.g., lineage) in column 2 or additional columns. Re-import the edited `.txt` file using the same `dropdown`; the new columns will be added to the `Columns` text area, allowing assignment to `Cell type (Level 2)` for sorting and grouping within `ClusToRa`. </sub> \
----`Samples (Level 1)` <sub>**checkbox** indicating that the selected column should be assigned as the sample group or condition. Omit this if analyzing only one sample. Required if the metadata contains multiple samples. If your dataset contains grouped samples, assign the group/category here and assign individual samples under `Samples (Level 2)`.</sub> \
----`Samples (Level 2)` <sub>**checkbox** indicating that the selected column should be assigned as the individual sample identifiers corresponding to the groups defined in `Samples (Level 1)`.</sub> \
--`assign barcodes` <sub>**button** used to assign the selected column as the barcode/cell ID field for the dataset (required if computing downstream differential analysis).</sub> \
-⚠️ <sub>**Critical:** If you plan to perform differential analysis later, you **MUST** use `assign barcodes` before starting `ClusToRa Analysis` </sub>  
+[**Section 4 (Scatter plot parameters)**](#) \
+<sub>This section provides a quick visualization of the spatial distribution of selected cell types or clusters within individual samples selected in Section 1.</sub> \
+-`Options` <sub>**dropdown** menu containing 4 options corresponding to the checkboxes below. These options assign cell types selected from the tree node in Section 5. </sub> \
+<sub>---`All selected` assigns all selected cell types from the tree node to the `All selected` checkbox (see explanation below).</sub> \
+<sub>---`Cluster(s)` assigns all selected cell types from the tree node to the `Cluster(s)` checkbox (see explanation below).</sub> \
+<sub>---`Cluster & non-Cluster` assigns a single selected cell type from the tree node to the `Cluster & non-Cluster` checkbox (see explanation below).</sub> \
+<sub>---`Co-localizing` assigns selected cell types from the tree node to the `Co-localizing` checkbox (see explanation below).</sub> \
+`☑☐` <sub>**checkboxes** used to define what will be visualized in the scatter plot.</sub> \
+---`All selected` <sub>**checkbox** when checked, plots all cells assigned above. </sub> \
+---`Clusters` <sub>**checkbox** when checked, plots only clusters corresponding to the assigned cell types. </sub> \
+---`Cluster & non-Cluster` <sub>**checkbox** when checked, plots clustered cells for the selected cell type together with non-clustered cells displayed using a lighter shade controlled by `alpha` (see tip below). </sub> \
+💡<sub> **Tip:** Use the `alpha` **numeric input** to define the transparency level of non-clustered cells in `Cluster & non-Cluster` visualizations.</sub> \
+---`Co-localizing` <sub>**checkbox** when checked, plots cells assigned above that spatially co-localize with the cluster(s) defined under `Cluster`. </sub> \
+-`Size` <sub>**numeric input** defining scatter marker size.</sub> \
+-`plot` <sub>**button** generates scatter plots using the selected parameters.</sub> \
+💡**Tip:** Exporting the `ColocMatrix` (see Section 5 below) is an excellent way to obtain IDs for clusters and their associated co-localizing or non-co-localizing cells, allowing further custom visualization and downstream analyses.  \
 
-[**Section 3 (Preview table and spatial distribution of X/Y coordinates)**](#) \
--`☑☐` <sub>**checkboxes** used to specify which type of preview will be displayed.</sub> \
----`meta` <sub>**checkbox** indicating that the preview will display the loaded metadata table.</sub> \
----`xyg` <sub>**checkbox** indicating that the preview will display the spatial X/Y distribution of cells, with cell types pseudo-colored by annotation. This is ⚠️ useful/critical for verifying that the correct sample grouping and assignments were used.</sub> \
--`Preview` <sub>**button** used to generate and display the selected preview.</sub> 
+[**Section 5 (Cell-type selection & colocalization matrix export)**](#) \
+-`Select Cells To Scatter Plot` <sub>**tree node** used to select cell types for scatter plotting as described in Section 4. </sub> \
+-`CellTypePreview` <sub>**button** providing a quick preview of detected cell types and higher-level groupings (if defined). </sub> \
+-`ColocMatrix` <sub>**button** used to export the colocalization matrix from the analysis. Supported export formats include `.txt`, `.mat`, and `.mtx`. The adjacent dropdown menu defines the export format</sub> \
 
-[**Section 4 (ClusToRa parameters setup)**](#) \
--`epsilon` <sub>**dropdown** menu used to define the DBSCAN epsilon parameter. Default: `auto`, as described in the ClusToRa manuscript.</sub> \
--`min cells` <sub>**numeric input** defining the minimum number of cells required to form a DBSCAN cluster. Default: `4` </sub> \
--`random` <sub>**numeric input** defining the number of iterations per cell type used for null-model generation. Default: `1000` </sub> \
--`clumpiness` <sub>**checkbox** indicating whether to compute the Clark–Evans index for cluster centroids.</sub> \
--`Threads>` <sub>**numeric input** defining the number of threads to use for parallel computation. Default: maximum available threads (automatically determined by the app once the minimum required assignments are completed).</sub> \
--`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> 
+[**Section 6 (Saving plots)**](#) \
+<sub>Although individual plots may be saved directly using MATLAB figure window options, this section allows batch export of multiple figures using predefined formats.</sub> \
+-`Save Plots` <sub>**button**used to save all open plots to a user-selected folder using the options below. </sub> \
+---`file type` <sub>**dropdown** menu defining export format (`.pdf`, `.svg`, `.png`, `.tif`, `.jpg`, `.emf`, `.eps`). </sub> \
+---`DPI` <sub>**dropdown** menu defining export resolution. </sub> 
 
-[**Section 5 (ClusToRa analysis and saving)**](#) \
--`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file.. </sub> \
--`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
--`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
--`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> 
+over-representation 
