@@ -20,7 +20,7 @@ Clone `ClusToRa` in MATLAB online (_link below_)
 ClusToRa_startup
 ```
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=maringa780/ClusToRa) \
-💡**Tip:** If you don’t have a MATLAB license, you can sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html) (Basic), which currently includes 20 free hours per month. Alternatively, you can install the standalone application for free (Option 2), which does not require a license.
+💡**Tip:** If you don’t have a MATLAB license, you can sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html) (Basic), which currently includes 20 free hours per month. Alternatively, you can install the standalone application for free (Option 2 below), which does not require a license.
 ###### Option 1.2 Desktop MATLAB
 Open your locally installed MATLAB application and run the same code shown above.
 > For local MATLAB, ensure you have the MATLAB toolboxes listed in the dependencies below.
