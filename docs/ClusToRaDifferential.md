@@ -8,10 +8,12 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 ⚠️ <sub>**Critical:** To enable functions of this tab, metadata barcodes must have been setup in the ClusTora analsysis tab to ensure Clustora analysis has barcodes that will be matched to the expression data loaded here (the app handles alignment of metadata and expresion adta barcodes).</sub>
 
 [**Section 1 (Loading expression data)**](#) \
--Option 1: `ALL in one` <sub>**button** used to load your expression data file (cells as rows, features like genes as columns) barcodes should be in column one, column headders (row one) should be our feature names. Your barcodes must be present in the metadata barcodes (file you did Clustora analysis on). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`..</sub> \
--`loaded` vs `drive` <sub>**switch** specifying whether to import results from the currently loaded session or from a saved file on disk. </sub> \
--`Level1` <sub>**text area** populated using the assignments from `Cell type (Level 1)` in the ClusToRa Analysis tab. Use this to select groups or samples for plotting. </sub> \
--`Level2` <sub>**text area** populated using assignments from `Cell type (Level 2)` in the ClusToRa Analysis tab. Use this to select samples for plotting when a second grouping level was defined. </sub> 
+-Option 1: \ 
+`ALL in one` <sub>**button** used to load your expression data file (cells as rows, features like genes as columns) barcodes should be in column one, column headders (row one) should be our feature names. Your barcodes must be present in the metadata barcodes (file you did Clustora analysis on). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`..</sub> \
+-Option 2: \
+`barcodes` <sub>**button** used to load your expression data barcodes (if file has multiple columns,column one will be used). Suceeful loading of barcodes activates `features` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`features` <sub>**button** used to load your expression data features (genes) (if file has multiple columns,column one will be used). Suceeful loading of featutres activates `MTX file` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres size. Suceeful loading of expression matrix activates . Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
 
 [**Section 2 (Cell-type composition & cluster summaries)**](#) \
 💡<sub> **Tip:** To activate this section, first generate any chord plot in **Section 3**. This initializes the cell-type color assignments used for stacked bar plots and related visualizations.</sub> \
