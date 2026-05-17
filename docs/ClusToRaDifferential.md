@@ -1,8 +1,8 @@
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/0e2b4eba-14ac-4f01-8ecb-5b7c4a39fe83" />
 
 ## • ClusToRa Differential
-**::** [Watch Illustration Video on Setting up Differential analysis](https://youtu.be/oK7yI0D0D3o) \
-**::** [Watch Illustration Video on calling gene enrichment analysis](https://youtu.be/oK7yI0D0D3o) \
+**::** [Watch Illustration Video on Setting up Differential analysis](https://youtu.be/JLECJ1osepI) \
+**::** [Watch Illustration Video on calling gene enrichment analysis](https://youtu.be/mrju-J1npoc) \
 _ClusToRa Differential_ tab allows you to load expression data and perform niche-centric differential gene expression and enrichment analyses. Highlighted sections (1–4) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> \
 ⚠️ <sub>**Critical:** To enable functions in this tab, metadata barcodes must have been assigned in the ClusToRa Analysis tab. This ensures ClusToRa analysis contains barcodes that can be matched to the expression data loaded here. The app automatically handles barcode alignment between metadata and expression datasets.</sub>
