@@ -46,12 +46,12 @@ _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visua
 ---`Co-localizing` <sub>**checkbox** when checked, plots cells assigned above that spatially co-localize with the cluster(s) defined under `Cluster`. </sub> \
 -`Size` <sub>**numeric input** defining scatter marker size.</sub> \
 -`plot` <sub>**button** generates scatter plots using the selected parameters.</sub> \
-💡**Tip:** Exporting the `ColocMatrix` (see Section 5 below) is an excellent way to obtain IDs for clusters and their associated co-localizing or non-co-localizing cells, allowing further custom visualization and downstream analyses.  \
+💡**Tip:** Exporting the `ColocMatrix` (see Section 5 below) is an excellent way to obtain IDs for clusters and their associated co-localizing or non-co-localizing cells, allowing further custom visualization and downstream analyses.  
 
 [**Section 5 (Cell-type selection & colocalization matrix export)**](#) \
 -`Select Cells To Scatter Plot` <sub>**tree node** used to select cell types for scatter plotting as described in Section 4. </sub> \
 -`CellTypePreview` <sub>**button** providing a quick preview of detected cell types and higher-level groupings (if defined). </sub> \
--`ColocMatrix` <sub>**button** used to export the colocalization matrix from the analysis. Supported export formats include `.txt`, `.mat`, and `.mtx`. The adjacent dropdown menu defines the export format</sub> \
+-`ColocMatrix` <sub>**button** used to export the colocalization matrix from the analysis. The first three columns contain the `arcodes` (if assigned prior to analysis), `X coordinates`, and `Y coordinates`. The remaining columns correspond to the `ColocMatrix`. Binary values in `CellA[Clusters]` indicate membership of CellA in clusters. Entries in `CellA[Clusters],CellB[Coloc+1, nonColoc-1]` indicate whether members of CellB colocalize (+1) or do not colocalize (-1) with CellA clusters. Supported export formats include `.txt`, `.mat`, and `.mtx`. The adjacent dropdown menu selects the export format. </sub> 
 
 [**Section 6 (Saving plots)**](#) \
 <sub>Although individual plots may be saved directly using MATLAB figure window options, this section allows batch export of multiple figures using predefined formats.</sub> \
