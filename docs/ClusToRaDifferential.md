@@ -18,13 +18,17 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 `Preview Exp` <sub>**button** randomly picks 50 cells and box plots the features/genes expression, it labels the total count per boxplots on the x axis (useful to see if data might be normalized).. </sub> \
 `normalize` <sub>**checkbox** on whether to normalize the data or not (if checked, normalizes each cell to a total count equal to the median of total counts for cells before normalization. </sub> \
 
-[**Section 2 (Get Differential genes and their  analysis and  )**](#) \
-💡<sub> **Tip:** To activate this section, first generate any chord plot in **Section 3**. This initializes the cell-type color assignments used for stacked bar plots and related visualizations.</sub> \
--`Clusters & bars summary` <sub>**button** generates 1–3 plots (depending on setup) together with their associated tables, which can be exported as .xlsx or .txt files.  </sub> \
-<sub>1) A stacked bar plot showing the percentage relative abundance of cell types across samples, together with the table used for plotting. If higher-level cell-type grouping was assigned (`Cell type (Level 2)`), an additional grouped bar plot is generated.</sub> \
-<sub>2) If `clumpiness` was computed (Clark–Evans index for cluster centroids), a bubble plot summarizing Clark–Evans index values and the percentage of cells participating in clusters is generated, together with associated tables.</sub>
----`fill option` <sub>**dropdown** menu used to define the metric used to color the bubbles.</sub> \
----`O size` <sub>**dropdown** menu used to define whether bubble sizes remain constant or vary according to a selected metric.</sub> 
+[**Section 2 (Get Differential genes and their enrichment analysis)**](#) \
+-`Z-thresh` <sub>**numeric input** defining the positive `Z-scores` threshold value used for determining which interactions witll be analysed. Default: `1.96`. </sub> \
+-`RunDiff` <sub>**button** runs differenmtial on all the interctions passing z-thresh from all the samples. </sub> \
+-`Preview Diff` (enabled by adjacent `☐` **checkbox**) <sub>**button** creates a table of the differentil result for the sample or group selected in ClusToRa plotting tab. </sub> \
+-`export` <sub>**button** saves all the differential results for all individual samples samples. If grouped exist, it also saves the combined results per group. The adjacent dropdown menu selects the export format. </sub> 
+
+-`Gene Analysis` <sub>**button** performs gene analsysi (over-representation analysis) for signifcantly both upregulated and downregulated genes (seperatelY) for cells colocalizing with clusters vs not, in the specific selected interaction to probe (section 3 below), using Enrichr database library or libraries selected `Select GeneSet database` (sectionm4).  : Genes to probe are determined by thresholds below. </sub> \
+---`Diff alpha` <sub>**numeric input** dtermines the alpha to use for differentil gene results either for pvalue or FDR.</sub> \
+---`type` <sub>**dropdown** menu defines whetehre to use pvalue or FDR for the `Diff alpha`.</sub> \
+---`Enrichr alpha` <sub>**numeric input** dtermines the alpha to use for differentil hits from Enrichr p values.</sub> \
+---`minGenes` <sub>**numeric input** dtermines the alpha to use for differentil hits from Enrichr p values.</sub> \
 
 [**Section 3 (Select interaction to probe)**](#) \
 -`☐` Four **text area** to help you probe the gene analysis from differential genes of the selected interaction.
