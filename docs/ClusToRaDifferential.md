@@ -3,54 +3,45 @@
 ## • ClusToRa Differential
 **::** [Watch Illustration Video on Setting up Differential analysis](https://youtu.be/oK7yI0D0D3o) \
 **::** [Watch Illustration Video on calling gene enrichment analysis](https://youtu.be/oK7yI0D0D3o) \
-_ClusToRa Differential_ tab allows you to load your expression files for niche-centric differential gene analysis . Highlighted sections (1–4) are detailed below. \
+_ClusToRa Differential_ tab allows you to load expression data and perform niche-centric differential gene expression and enrichment analyses. Highlighted sections (1–4) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> \
-⚠️ <sub>**Critical:** To enable functions of this tab, metadata barcodes must have been setup in the ClusTora analsysis tab to ensure Clustora analysis has barcodes that will be matched to the expression data loaded here (the app handles alignment of metadata and expresion adta barcodes).</sub>
+⚠️ <sub>**Critical:** To enable functions in this tab, metadata barcodes must have been assigned in the ClusToRa Analysis tab. This ensures ClusToRa analysis contains barcodes that can be matched to the expression data loaded here. The app automatically handles barcode alignment between metadata and expression datasets.</sub>
 
 [**Section 1 (Loading expression data)**](#) \
--Option 1: \ 
-`ALL in one` <sub>**button** used to load your expression data file (cells as rows, features like genes as columns) barcodes should be in column one, column headders (row one) should be our feature names. Your barcodes must be present in the metadata barcodes (file you did Clustora analysis on). Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`..</sub> \
--Option 2: \
-`barcodes` <sub>**button** used to load your expression data barcodes (if file has multiple columns,column one will be used). Suceeful loading of barcodes activates `features` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
-`features` <sub>**button** used to load your expression data features (genes) (if file has multiple columns,column one will be used). Succesful loading of featutres activates `MTX file` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
-`MTX file` <sub>**button** used to load your expression data (`mtx` file, can be sparse or not) where row size should match barcode size and colum size should much featutres/genes size. </sub> \
-`Preview load` <sub>**button** opens a table with 100 rows and 100 colums allowing you to preview the barcodes, features/genes and expressiob matrix. </sub> \
-`Preview Exp` <sub>**button** randomly picks 50 cells and box plots the features/genes expression, it labels the total count per boxplots on the x axis (useful to see if data might be normalized).. </sub> \
-`normalize` <sub>**checkbox** on whether to normalize the data or not (if checked, normalizes each cell to a total count equal to the median of total counts for cells before normalization. </sub> \
+>**Option 1:**
 
-[**Section 2 (Get Differential genes and their enrichment analysis)**](#) \
--`Z-thresh` <sub>**numeric input** defining the positive `Z-scores` threshold value used for determining which interactions witll be analysed. Default: `1.96`. </sub> \
--`RunDiff` <sub>**button** runs differenmtial on all the interctions passing z-thresh from all the samples. </sub> \
--`Preview Diff` (enabled by adjacent `☐` **checkbox**) <sub>**button** creates a table of the differentil result for the sample or group selected in ClusToRa plotting tab. </sub> \
--`export` <sub>**button** saves all the differential results for all individual samples samples. If grouped exist, it also saves the combined results per group. The adjacent dropdown menu selects the export format. </sub> 
+`ALL in one` <sub>**button** used to load a complete expression dataset where cells are rows and features (e.g., genes) are columns. Barcodes should be located in column 1, and column headers (row 1) should contain feature/gene names. Loaded barcodes must be present in the metadata barcodes used during ClusToRa Analysis. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`.</sub> \
+>**Option 2:**
 
--`Gene Analysis` <sub>**button** performs gene analsysi (over-representation analysis) for signifcantly both upregulated and downregulated genes (seperatelY) for cells colocalizing with clusters vs not, in the specific selected interaction to probe (section 3 below), using Enrichr database library or libraries selected `Select GeneSet database` (sectionm4).  : Genes to probe are determined by thresholds below. </sub> \
----`Diff alpha` <sub>**numeric input** dtermines the alpha to use for differentil gene results either for pvalue or FDR.</sub> \
----`type` <sub>**dropdown** menu defines whetehre to use pvalue or FDR for the `Diff alpha`.</sub> \
----`Enrichr alpha` <sub>**numeric input** dtermines the alpha to use for differentil hits from Enrichr p values.</sub> \
----`minGenes` <sub>**numeric input** dtermines the alpha to use for differentil hits from Enrichr p values.</sub> \
+`barcodes` <sub>**button** used to load expression dataset barcodes separately. If multiple columns exist, only column 1 will be used. Successful loading activates the features button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`features` <sub>**button** used to load feature/gene names separately. If multiple columns exist, only column 1 will be used. Successful loading activates the `MTX file` button. Supported formats: `.txt`, `.csv`, `.tsv`, `.xlsx`, and `.xls`. </sub> \
+`MTX file` <sub>**button** used to load the expression matrix (`.mtx` format; sparse or dense supported). Matrix row count must match barcode count, and column count must match feature/gene count. </sub> 
 
-[**Section 3 (Select interaction to probe)**](#) \
--`☐` Four **text area** to help you probe the gene analysis from differential genes of the selected interaction.
----Top <sub>**text area** displays the sample or group selected (use the Plotting tab level1 and 2 to select samples or groups to.</sub> \
----Main <sub>**text area** displays the interactions from sample or group selected.</sub> \
----`pairs` <sub>**text area** displays the number of interactions in the main text area.</sub> \
----`search interaction` <sub>**text area** allows you to quickly search inteaction of interst in the main text area.</sub> \
+`Preview load` <sub>**button** opens a preview table displaying up to 100 rows and 100 columns of the loaded barcodes, features/genes, and expression matrix. </sub> \
+`Preview Exp` <sub>**button** randomly selects 50 cells and generates boxplots of feature/gene expression distributions. Total counts per cell are displayed on the x-axis, which is useful for assessing whether the data may already be normalized. </sub> \
+`normalize` <sub>**checkbox** specifying whether expression data should be normalized. When enabled, each cell is normalized to a total count equal to the median total count across all cells prior to normalization. </sub> \
 
-[**Section 4 (Select database(s) to use)**](#) \
-<sub>This section provides a quick visualization of the spatial distribution of selected cell types or clusters within individual samples selected in Section 1.</sub> \
--`Options` <sub>**dropdown** menu containing 4 options corresponding to the checkboxes below. These options assign cell types selected from the tree node in Section 5. </sub> \
-<sub>---`All selected` assigns all selected cell types from the tree node to the `All selected` checkbox (see explanation below).</sub> \
-<sub>---`Cluster(s)` assigns all selected cell types from the tree node to the `Cluster(s)` checkbox (see explanation below).</sub> \
-<sub>---`Cluster & non-Cluster` assigns a single selected cell type from the tree node to the `Cluster & non-Cluster` checkbox (see explanation below).</sub> \
-<sub>---`Co-localizing` assigns selected cell types from the tree node to the `Co-localizing` checkbox (see explanation below).</sub> \
-`☑☐` <sub>**checkboxes** used to define what will be visualized in the scatter plot.</sub> \
----`All selected` <sub>**checkbox** when checked, plots all cells assigned above. </sub> \
----`Clusters` <sub>**checkbox** when checked, plots only clusters corresponding to the assigned cell types. </sub> \
----`Cluster & non-Cluster` <sub>**checkbox** when checked, plots clustered cells for the selected cell type together with non-clustered cells displayed using a lighter shade controlled by `alpha` (see tip below). </sub> \
-💡<sub> **Tip:** Use the `alpha` **numeric input** to define the transparency level of non-clustered cells in `Cluster & non-Cluster` visualizations.</sub> \
----`Co-localizing` <sub>**checkbox** when checked, plots cells assigned above that spatially co-localize with the cluster(s) defined under `Cluster`. </sub> \
--`Size` <sub>**numeric input** defining scatter marker size.</sub> \
--`plot` <sub>**button** generates scatter plots using the selected parameters.</sub> \
-💡**Tip:** Exporting the `ColocMatrix` (see Section 5 below) is an excellent way to obtain IDs for clusters and their associated co-localizing or non-co-localizing cells, allowing further custom visualization and downstream analyses.  \
+[**Section 2 (Differential gene analysis & enrichment analysis)**](#) \
+-`Z-thresh` <sub>**numeric input** defining the positive `Z-score` threshold used to determine which interactions will undergo differential analysis. Default: `1.96`. </sub> \
+-`RunDiff` <sub>**button** performs differential gene expression analysis on all interactions passing the selected `Z-thresh` across all samples. </sub> \
+-`Preview Diff` (enabled using adjacent `☐` **checkbox**) <sub>**button** generates a table of differential analysis results for the currently selected sample or group from the ClusToRa Plotting tab. </sub> \
+-`export` <sub>**button** saves all differential analysis results for individual samples. If grouped samples exist, combined group-level results are also exported. The adjacent **dropdown** menu defines the export format. </sub> 
+
+-`Gene Analysis` <sub>**button** performs over-representation analysis (ORA) on significantly upregulated and downregulated genes (analyzed separately) comparing cells co-localizing with clusters versus non-co-localizing cells for the selected interaction (Section 3 below). Enrichment analysis is performed using selected Enrichr database libraries from `Select GeneSet database` (Section 4 below). Genes included in the analysis are determined using the thresholds below. Background gene list is all the genes in the loaded expression data </sub> \
+---`Diff alpha` <sub>**numeric input** defining the significance threshold (`alpha`) used for differential gene analysis based on either p-value or FDR.</sub> \
+---`type` <sub>**dropdown** menu specifying whether `Diff alpha` should be applied to raw p-values or FDR-adjusted values.</sub> \
+---`Enrichr alpha` <sub>**numeric input** defining the significance threshold (`alpha`) used for enrichment hits returned by Enrichr.</sub> \
+---`minGenes` <sub>**numeric input** defining the minimum number of overlapping genes required for an enrichment hit to be retained.</sub> \
+
+[**Section 3 (Selecting interactions to probe)**](#) \
+-`☐` Four **text area** are provided to facilitate exploration of enrichment analyses from differential gene results associated with selected interactions..
+---Top <sub>**text area** displaying the currently selected sample or group. Sample/group selection is controlled from the `Level1` and `Level2` options in the ClusToRa Plotting tab.</sub> \
+---Main <sub>**text area** displaying interactions identified within the selected sample or group.</sub> \
+---`pairs` <sub>**text area** displaying the total number of interactions listed in the main text area.</sub> \
+---`search interaction` <sub>**text area** allowing rapid searching for interactions of interest within the main interaction list.</sub> \
+
+[**Section 4 (Selecting enrichment database(s))**](#) \
+-`Select GeneSet database` <sub>**tree node** used to select Enrichr database(s) for enrichment analysis of the selected interaction from Section 3. </sub> \
+-`Add database` <sub>**button** allowing addition of Enrichr databases not currently listed in the tree node. </sub> \
+💡<sub> **Tip:** Click the `Database libraries` link within the app to view the complete list of Enrichr-supported databases. Additional databases of interest may be manually added using the `Add database` **button**.</sub> \
 
