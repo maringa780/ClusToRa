@@ -1,7 +1,7 @@
 <img width="800" height="500" alt="Asset 4" src="https://github.com/user-attachments/assets/442192d2-1c8f-4ce9-93c3-83ff8ceb135f" />
 
 ### • ClusToRa Plotting
-**::** [Watch Illustration Video on ClusToRa Plotting](https://youtu.be/oK7yI0D0D3o) \
+**::** [Watch Illustration Video on ClusToRa Plotting](https://youtu.be/gL260cnvkJo) \
 _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visualize spatial interaction outputs, and export colocalization matrices for downstream exploration. Highlighted sections (1–6) are detailed below. \
 💡**Tip:** <sub> Hover your cursor over any section of the app to view helpful information describing that part of the interface and its functionality.</sub> 
 
