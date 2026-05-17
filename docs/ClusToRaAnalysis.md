@@ -46,7 +46,7 @@ _ClusToRa Analysis_ tab allows you to load your metadata file containing coordin
 -`self` <sub>**checkbox** indicating whether ClusToRa analysis should include interactions of cell types with themselves.</sub> 
 
 [**Section 5 (ClusToRa analysis and saving)**](#) \
--`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file. </sub> \
--`save` <sub>**button** used to manually save results when `auto save` is unchecked. </sub> \
+-`auto save` <sub>**checkbox** indicating that ClusToRa results will be automatically saved. When selected, you will be prompted to choose a folder in which results will be saved as a MATLAB `.mat` file. Zscores and infiltration/envelopment ratio table will also be generated. </sub> \
+-`save` <sub>**button** used to manually save results when `auto save` is unchecked. Zscores and infiltration/envelopment ratio table will also be generated. </sub> \
 -`Start ClusToRa` <sub>**button** used to start the analysis. The progress bar in the `ClusToRa Analysis` tab displays the percentage completion of the current analysis.</sub> \
 -`load` <sub>**button** used to load previously saved ClusToRa analysis runs.</sub> 
