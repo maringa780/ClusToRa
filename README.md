@@ -69,7 +69,7 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 <details>
    
    [More detailed ClusToRa Differential instructions](docs/ClusToRaDifferential.md) \
-<img width="657" height="333" alt="image" src="https://github.com/user-attachments/assets/02e13e3e-7733-416b-bf70-2f39a5b67925" />
+<img width="657" height="332" alt="image" src="https://github.com/user-attachments/assets/5c23ba7d-c5bc-48db-8ab2-1f60c94d344d" />
 </details>
 
 # Dependencies
