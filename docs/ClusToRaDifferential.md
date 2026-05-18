@@ -1,4 +1,4 @@
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/0e2b4eba-14ac-4f01-8ecb-5b7c4a39fe83" />
+<img width="800" height="500" alt="Label-3" src="https://github.com/user-attachments/assets/a4303b53-e40a-4de9-917a-02311beea01b" />
 
 ## • ClusToRa Differential
 **::** [Watch Illustration Video on Setting up Differential analysis](https://youtu.be/JLECJ1osepI) \
