@@ -56,5 +56,5 @@ _ClusToRa Plotting_ tab allows you to load your ClusToRa Analysis results, visua
 [**Section 6 (Saving plots)**](#) \
 <sub>Although individual plots may be saved directly using MATLAB figure window options, this section allows batch export of multiple figures using predefined formats.</sub> \
 -`Save Plots` <sub>**button**used to save all open plots to a user-selected folder using the options below. </sub> \
----`file type` <sub>**dropdown** menu defining export format (`.pdf`, `.svg`, `.png`, `.tif`, `.jpg`, `.emf`, `.eps`). </sub> \
+---`file type` <sub>**dropdown** menu defining export format (`.pdf`, `.svg`, `.png`, `.tif`, `.jpg`, `.emf`, `.eps`). `.pdf`, `.svg`,`.emf` and `.eps` format are exported as `vector graphics`  </sub> \
 ---`DPI` <sub>**dropdown** menu defining export resolution. </sub> 
