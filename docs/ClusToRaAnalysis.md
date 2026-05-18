@@ -1,4 +1,4 @@
-<img width="800" height="500" alt="Illustrations1" src="https://github.com/user-attachments/assets/7e96f27d-5928-4ce5-8c5c-4be68f1eb1e6" /> 
+<img width="800" height="500" alt="Label-1" src="https://github.com/user-attachments/assets/511d493c-7f5a-4728-9b75-cf2cd6199d9c" /> 
 
 ### • ClusToRa Analysis
 **::** [Watch Illustration Video on ClusToRa Analysis](https://youtu.be/oK7yI0D0D3o) \
