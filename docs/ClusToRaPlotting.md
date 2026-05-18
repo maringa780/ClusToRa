@@ -1,4 +1,4 @@
-<img width="800" height="500" alt="Asset 4" src="https://github.com/user-attachments/assets/442192d2-1c8f-4ce9-93c3-83ff8ceb135f" />
+<img width="800" height="500" alt="Label-2" src="https://github.com/user-attachments/assets/017645d4-fcbb-464c-9853-1c37fc716f69" />
 
 ### • ClusToRa Plotting
 **::** [Watch Illustration Video on ClusToRa Plotting](https://youtu.be/gL260cnvkJo) \
