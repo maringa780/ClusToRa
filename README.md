@@ -85,4 +85,5 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 ## Optional
 •_EnrichrAPI modified from scGEAToolbox (**included**)_ https://github.com/jamesjcai/scGEAToolbox \
 •_Matrix Market file reader/writer (**included**)_ https://math.nist.gov/MatrixMarket/mmio/matlab/mmiomatlab.html \
-•_Colorspace Transformations (**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations
+•_Colorspace Transformations (**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/28790-colorspace-transformations \
+•_Natural-Order Sort (**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/34464-customizable-natural-order-sort
