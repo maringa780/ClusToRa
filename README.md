@@ -3,7 +3,7 @@
 # ClusToRa
 `ClusToRa` (Cluster-to-Randomization) is a spatial omics framework that distinguishes organized cellular niches from stochastic proximity by using high-density territory identification and a fixed-position null model. It accurately quantifies cell-type colocalization and recruitment while suppressing density-driven false positives common in conventional analysis methods.
 ### citation
-Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identifying structural recruitment and infiltration in spatial omics
+Githaka J.M., Lerner E.P. (2026). ClusToRa: A niche-centric framework for identifying structural recruitment and infiltration in spatial omics.
 ## Installation Guide 
 #### Option 1: `ClusToRa` in MATLAB 
 ###### Option 1.1 MATLAB online
