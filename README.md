@@ -26,18 +26,18 @@ Open your locally installed MATLAB application and run the same code shown above
 > For local MATLAB, ensure you have the MATLAB toolboxes listed in the dependencies below.
 
 #### Option 2: Install `ClusToRa` as a Standalone Application on Windows/macOS  
-> Download `WindowsClusToRa.exe` or `macOSClusToRa.dmg` from the `app` folder
 ##### Windows
-1. Download `WindowsClusToRa.exe`
+1. Download `WindowsClusToRa.exe` from the `app` folder.
 2. Double-click the installer/application file
 3. Follow the on-screen installation prompts
 4. Launch `ClusToRa` from the Start Menu or desktop shortcut
 > If Windows displays a security warning, click **More info** → **Run anyway**.
 ##### macOS
-1. Download the macOS version `macOSClusToRa.dmg`
-2. Open the downloaded `.dmg` or application package
-3. Drag `ClusToRa` into the `Applications` folder
-4. Open the application from `Applications`
+> A precompiled macOS installer is not currently available because the application must be compiled on a macOS system. However, macOS users can still install and run `ClusToRa` by compiling the application from the source code. Once compiled, the standalone application can be installed and used on any macOS system without requiring MATLAB..
+1. Download or clone the `ClusToRa` source code repository
+2. Install the required dependencies (see below for toolboxes not included)
+3. Follow the build instructions to compile the standalone macOS application (see: https://www.youtube.com/watch?v=dUcODJ6Hbv0 )
+4. After compilation, the generated application can be moved into the `Applications` folder on any macOS system and is ready for use
 > The first time you open the app, macOS may display a security warning because the app was downloaded from the internet.  
 > Go to **System Settings → Privacy & Security** and click **Open Anyway** if needed.
 
