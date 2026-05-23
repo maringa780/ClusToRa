@@ -74,11 +74,11 @@ _ClusToRa Differential_ tab allows you to load your expression files for niche-c
 
 # Dependencies
 
-## MATLAB
-•_Image Processing Toolbox_ \
-•_Statistics and Machine Learning Toolbox_ \
-•_Parallel Computing Toolbox_ \
-•_Bioinformatics Toolbox_ \
+## Required
+•_MATLAB Image Processing Toolbox_ \
+•_MATLAB Statistics and Machine Learning Toolbox_ \
+•_MATLAB Parallel Computing Toolbox_ \
+•_MATLAB Bioinformatics Toolbox_ \
 •_biChordChart (**included**)_ https://github.com/slandarer/MATLAB-chord-diagram \
 •_Maximally perceptually-distinct colors Generator (**included**)_ https://www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors
 
