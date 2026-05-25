@@ -15,7 +15,6 @@ Clone `ClusToRa` in MATLAB online (_link below_)
 
 %% Clone ClusToRa repository
 !git clone https://github.com/maringa780/ClusToRa.git
-cd ClusToRa
 
 %% Start ClusToRa
 ClusToRa_startup
