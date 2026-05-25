@@ -16,7 +16,7 @@ Clone `ClusToRa` in MATLAB online (_link below_)
 %% Clone ClusToRa repository
 !git clone https://github.com/maringa780/ClusToRa.git
 
-%% Start ClusToRa
+%% Start ClusToRa (If `ClusToRa_startup.m` is not in your current folder, navigate to the main `ClusToRa` folder where it is stored)
 ClusToRa_startup
 ```
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=maringa780/ClusToRa) \
